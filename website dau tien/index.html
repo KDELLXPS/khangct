@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #000;
+      }
+      .flex {
+        display: flex;
+      }
+      .col1,
+      .col2,
+      .col3 {
+        width: 30%;
+      }
+      .col1 {
+      }
+      @media (max-width: 876px) {
+        .flex {
+          background-color: red;
+        }
+      }
+      @media (max-width: 500px) {
+        .flex {
+          background-color: #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Khang</div>
+    <div class="flex">
+      <div class="col1">1</div>
+      <div class="col2">2</div>
+      <div class="col3">3</div>
+    </div>
+  </body>
+</html>
